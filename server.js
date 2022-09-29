@@ -6,7 +6,8 @@ app.use(express.json());
 app.use(express.static('public'))
 
 app.post('/w', (req, res) => {
-    console.log(req.query, req.body)
+    console.log(req.query, req.body);
+
     res.json({
         result: {
             body: req.body,
@@ -16,7 +17,8 @@ app.post('/w', (req, res) => {
 });
 
 app.get('/w', (req, res) => {
-    console.log(req.query, req.body)
+    console.log(req.query, req.body);
+
     res.json({
         result: {
             body: req.body,
@@ -26,7 +28,8 @@ app.get('/w', (req, res) => {
 });
 
 app.put('/w', (req, res) => {
-    console.log(req.query, req.body)
+    console.log(req.query, req.body);
+
     res.json({
         result: {
             body: req.body,
@@ -36,7 +39,8 @@ app.put('/w', (req, res) => {
 });
 
 app.patch('/w', (req, res) => {
-    console.log(req.query, req.body)
+    console.log(req.query, req.body);
+
     res.json({
         result: {
             body: req.body,
